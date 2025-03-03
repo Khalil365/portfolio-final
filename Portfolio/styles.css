@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 2rem;
+    color: white; /* Set all body text color to white */
+    font-family: 'Arial', sans-serif; /* Default font for the whole page */
+}
+
+/* Section home adjustments */
+#home, #about, #contact {
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 2rem;
+    color: white; /* Change text color to white for all sections */
+    font-family: 'Arial', sans-serif; /* Default font for the sections */
+    backdrop-filter: blur(8px); /* Apply blur effect to the section background */
+    -webkit-backdrop-filter: blur(8px); /* Ensure compatibility for Safari */
+}
+
+/* Styling for the h1 inside the intro div */
+#home .intro h1,
+#about .intro h1,
+#contact .intro h1 {
+    font-family: 'Georgia', serif; /* Set a specific font for the h1 */
+    font-size: 48px; /* Adjust the font size */
+    font-weight: bold; /* Set font weight */
+    color: white; /* Ensure h1 text is white */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: Add a subtle text shadow */
+}
+
+/* Styling for the h3 inside the project-card */
+#home .projects-container h3,
+#about .projects-container h3,
+#contact .projects-container h3 {
+    font-family: 'Courier New', monospace; /* Set a font for the h3 */
+    font-size: 24px; /* Font size for the project card */
+    font-weight: normal; /* Normal font weight */
+    color: white; /* Make h3 text white */
+    margin-bottom: 10px; /* Add some space below the h3 */
+}
+
+/* Styling for the p tags inside project card */
+#home .projects-container p,
+#about .projects-container p,
+#contact .projects-container p {
+    font-family: 'Verdana', sans-serif; /* Font for the paragraph */
+    font-size: 18px; /* Adjust the size */
+    color: white; /* Make paragraph text white */
+}
+
+/* Styling for the p tags inside the intro section */
+#home .intro p,
+#about .intro p,
+#contact .intro p {
+    font-family: 'Verdana', sans-serif; /* Use a clean sans-serif font */
+    font-size: 20px; /* Larger text size for the introduction */
+    color: white; /* Ensure intro paragraph text is white */
+    margin-top: 10px; /* Add space above the paragraph */
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white; /* Set header text color to white */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white; /* Make logo text white */
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white; /* Make navbar links white */
+}
+
+.nav-item a:hover {
+    color: #ddd; /* Lighten color slightly on hover */
+}
+
+section {
+    display: block;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white; /* Make section text white */
+}
+
+.about-content, .projects-container, .contact-form, .social-media {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.project-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+#projects .project-card {
+    background-color: white;
+    margin: 20px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: black; /* Ensure text inside the project card is black */
+}
+
+#projects .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.social-media ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-media li {
+    margin: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: white; /* Make social media links white */
+    font-weight: bold;
+}
+
+.social-media a:hover {
+    color: #ddd; /* Lighten color slightly on hover */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
